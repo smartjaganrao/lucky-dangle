@@ -19,6 +19,7 @@ mkdir -p "$APP_DIR/Contents/Resources"
 
 cp "$BIN_PATH/LuckyDangle" "$APP_DIR/Contents/MacOS/$APP_NAME"
 cp "Sources/LuckyDangle/Info.plist" "$APP_DIR/Contents/Info.plist"
+cp Resources/* "$APP_DIR/Contents/Resources/" 2>/dev/null || true
 
 # Ad-hoc code sign so macOS treats it as a consistent app identity across
 # launches (required for Input Monitoring / Accessibility permission to

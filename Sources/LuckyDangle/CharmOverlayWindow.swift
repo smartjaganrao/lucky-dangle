@@ -58,7 +58,7 @@ final class CharmOverlayWindow: NSWindow {
 
         let mouse = NSEvent.mouseLocation
         let anchorHit = CGRect(x: anchor.x - 24, y: anchor.y - 24, width: 48, height: 48).contains(mouse)
-        let bobHit = CGRect(x: bob.x - 56, y: bob.y - 56, width: 112, height: 112).contains(mouse)
+        let bobHit = CGRect(x: bob.x - 56, y: bob.y - 65, width: 112, height: 130).contains(mouse)
         ignoresMouseEvents = !(anchorHit || bobHit || view.isDraggingCharmOrAnchor)
     }
 

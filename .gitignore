@@ -1,0 +1,15 @@
+# Swift Package Manager & Build artifacts
+.build/
+Packages/
+*.xcodeproj
+*.xcworkspace
+
+# macOS System & IDE
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*~
+
+# Built Applications & Packages
+*.app/
